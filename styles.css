@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+}
+
+[data-theme="light"] {
+  --header-bg-col: #fbf0e2;
+  --header-txt-col: #fbf0e2;
+  --content-bg-col: #fbf0e2;
+  --content-txt-col: rgb(217, 152, 111);
+  --footer-bg-col: #fbf0e2;
+  --footer-txt-col: rgb(217, 152, 111);
+  --body-bg-col: #f2f2d5;
+  --stroke-col: rgb(217, 152, 111);
+}
+
+[data-theme="dark"] {
+  --header-bg-col: #003e00;
+  --header-txt-col: #003e00;
+  --stroke-col: white;
+  --content-bg-col: #015600;
+  --content-txt-col: white;
+  --footer-bg-col: #003e00;
+  --footer-txt-col: white;
+  --body-bg-col: #181818;
+}
+
+[data-theme="hawaii"] {
+  --header-bg-col: #fcfc00;
+  --header-txt-col: black;
+  --stroke-col: black;
+  --content-bg-col: #01fdfe;
+  --content-txt-col: black;
+  --footer-bg-col: #fd3900;
+  --footer-txt-col: black;
+  --body-bg-col: #fc5aaa;
+}
+
+body {
+  background-color: var(--body-bg-col);
+}
+
+header {
+  background-color: var(--header-bg-col);
+  color: var(--header-txt-col);
+  font-size: 80px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  -webkit-text-stroke-color: var(--stroke-col);
+  -webkit-text-stroke-width: 2px;
+}
+
+p {
+  color: var(--content-txt-col);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+footer {
+  color: var(--footer-txt-col);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+}
+
+.sec_1 {
+  display: grid;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.sec_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--header-bg-col);
+  padding-top: 70px;
+}
+
+.sec_2,
+.sec_3,
+.sec_4 {
+  border: solid 1px black;
+  padding-left: 20px;
+}
+
+.selector {
+  text-align: end;
+  align-self: end;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.sec_3 {
+  background-color: var(--content-bg-col);
+  padding-top: 80px;
+  padding-bottom: 250px;
+}
+
+.sec_4 {
+  background-color: red;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background-color: var(--footer-bg-col);
+}
